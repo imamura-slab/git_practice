@@ -29,6 +29,9 @@ git練習
 |  12 | git tag <tag名>                                     | HEADが指すコミットにタグを付ける                                         |
 |  13 | git tag <tag名> <コミット番号>                      | 指定したコミットにタグを付ける                                           |
 |  14 | git tag `-a` <tag名> -m <メッセージ> <コミット番号> | 指定したコミットに`注釈付き`タグを付ける                                 |
+|  15 | git stash                                           | ワークツリーの変更をstashに退避する                                      |
+|  16 | git stash list                                      | stashの中身を表示する                                                    |
+|  17 | git stash pop                                       | stashの中身を取り出す                                                    |
 
 
 
