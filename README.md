@@ -31,7 +31,11 @@ git練習
 |  14 | git tag `-a` <tag名> -m <メッセージ> <コミット番号> | 指定したコミットに`注釈付き`タグを付ける                                 |
 |  15 | git stash                                           | ワークツリーの変更をstashに退避する                                      |
 |  16 | git stash list                                      | stashの中身を表示する                                                    |
-|  17 | git stash pop                                       | stashの中身を取り出す                                                    |
+|  17 | git stash pop                                       | stashの中身を取り出す(ワークツリーのみ)                                  |
+|  18 | git stash pop `--index`                             | stashの中身を取り出す(ワークツリーとステージングエリア)                  |
+|  19 | git stash clear                                     | stashに入っている全ての変更を削除する                                    |
+|  20 | git reflog                                          | Gitの操作履歴を表示する                                                  |
+|  21 | git reset --hard `reflogの出力であるHEAD@{1}など`   | 指定した操作の直後の状態に戻す                                           |
 
 
 
@@ -55,6 +59,7 @@ git練習
 |   8 | git reset <コミット番号>                  | 指定したコミットにHEADと`ブランチ`を移動する(`ステージングエリアにHEADの内容をコピー`)               |
 |   9 | git merge `--no-ff` <ブランチ名>          | fast-forwardマージできる場合でも3-wayマージを行う                                                    |
 |  10 | git branch <ブランチ名> <SHA-1ハッシュ値> | コミットを指定してブランチを作成する                                                                 |
+|  11 | git blame <ファイル名>                    | 各行を最後に変更した日時, 人物, どのコミットかを表示する                                             |
 
 
 
